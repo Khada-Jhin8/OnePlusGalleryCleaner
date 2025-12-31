@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "一加云相册删除助手",
+  "version": "2.0",
+  "description": "全自动一键删除所有图片",
+  "permissions": ["activeTab", "scripting"],
+  "content_scripts": [
+    {
+      "matches": ["https://cloud.h2os.com/*"], 
+      "js": ["content.js"]
+    }
+  ]
+}
